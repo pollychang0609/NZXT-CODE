@@ -20,17 +20,17 @@ Write a web app using the Python flask framework, which contains a static web pa
 
 * [] Response the match or not result to front-end.
 
-* [] Write it with python and the flask framework.
+* [X] ~~Write it with python and the flask framework.~~ Replace by jest.
 
 ### Unit test:
 
-* [] Test the function that verifies if the credentials match with different test cases.
+* [X] Test the function that verifies if the credentials match with different test cases.
 
-* Write it using python unittest or pytest.
+* [X] ~~Write it using python unittest or pytest.~~ Replace by jest.
 
 ### API test:
 
-* [] Test back-end service to see if it responses correctly.
+* [X] Test back-end service to see if it responses correctly.
 
 * [] Write it using cucumberjs framework, with any of the HTTP client modules supported, the language should be Typescript (or Javascript).
 
@@ -77,5 +77,32 @@ Note: Feel free to change the Python parts to any of the framework you prefer, a
     
     session
 
+
+## Database
+
+* [mongo](https://hub.docker.com/_/mongo)
+
+     - docker image
+
+        ```shell
+        docker pull mongo
+        ```
+
+    - docker-compose.yml 
+        ```yml
+        version: '3'
+        services:
+            database:
+                image: mongo
+                container_name: mongo-latest 
+                ports:
+                    - "27017:27017"
+
+        ```
+     - docker-compose command
+        ```shell
+        docker-compose up        // start 
+        docker-compose down      // stop
+        ```
 ## Run
 

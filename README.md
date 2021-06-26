@@ -1,7 +1,10 @@
-# NZXT-CODE
+# About this project
 
+This is poc for NZXT and it's only include backend api.
+The front-end part, [click here](https://github.com/pollychang0609/nzxt-ui)
 
 ## Requirement
+
 Write a web app using the Python flask framework, which contains a static web page, and a back-end function. Then write 3 different types of test for it, including unit tests, web API tests (HTTP request tests), and user interface tests. Requirements as below.
 
 ### Front-end static page:
@@ -77,6 +80,9 @@ Note: Feel free to change the Python parts to any of the framework you prefer, a
     
     session
 
+* [cors](https://www.npmjs.com/package/cors)
+
+    CORS is a node.js package for providing a Connect/Express middleware that can be used to enable CORS with various options.
 
 ## Database
 
@@ -106,3 +112,8 @@ Note: Feel free to change the Python parts to any of the framework you prefer, a
         ```
 ## Run
 
+
+
+## Reference
+
+- [CORS](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CORS)

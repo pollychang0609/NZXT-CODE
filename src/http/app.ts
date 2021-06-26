@@ -7,10 +7,12 @@ import { initAuth, initSession } from "../service/authService";
 import cfg from "../cfg";
 
 const swaggerUi = require("swagger-ui-express");
+const cors = require('cors');
 const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(cors());
 //default for health check
 app.get("/", function (req, res) {
   // console.info('====>OK')

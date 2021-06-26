@@ -1,5 +1,3 @@
-/* tslint:disable */
-/* eslint-disable */
 /* istanbul ignore file */
 
 console.info(`===> project env_local.js ${process.env.NODE_ENV}`);
@@ -11,17 +9,23 @@ module.exports = {
     getEnv : os.type(),
     localhost : {
         // MONGODB
-        MONGODB_URL : 'mongodb://localhost:27017',
+        MONGODB_URL: "mongodb://localhost:27017",
         MONGODB_OPTIONS: { useNewUrlParser: true, useUnifiedTopology: true, tls: false, dbName : 'test' },
+        TESTER: "iamtester",
+        TESTER_PASSWORD: "admin!23"
     },
     dev : {
          // MONGODB
          MONGODB_URL : 'mongodb://localhost:27017',
          MONGODB_OPTIONS: { useNewUrlParser: true, useUnifiedTopology: true, tls: false, dbName : 'test' },
+         TESTER: "iamtester",
+         TESTER_PASSWORD: "admin!23"
     },
     test : {
          // MONGODB
          MONGODB_URL : 'mongodb://localhost:27017',
          MONGODB_OPTIONS: { useNewUrlParser: true, useUnifiedTopology: true, tls: false, dbName : 'test' },
+         TESTER: "iamtester",
+         TESTER_PASSWORD: "admin!23"
     }
 };

@@ -1,0 +1,22 @@
+{
+    "entryFile": "./src/http/app.ts",
+    "noImplicitAdditionalProperties": "throw-on-extras",
+    "controllerPathGlobs": ["./src/http/**/*Controller.ts", "./src/test/**/*Controller.ts"],
+    "routes": {
+        "basePath": "/api/v1",
+        "routesDir": "./src/http/routes",
+        "middleware": "express",
+        "middlewareTemplate": "./src/template/koa_route.ts.js"
+    },
+    "spec": {
+        "outputDirectory": "./build",
+        "specVersion": 3,
+        "basePath": "/api/v1",
+        "host": ""
+    },
+    "swagger": {
+        "schemes": ["http"],
+        "entryFile": "./src/http/app.ts"
+        
+    }
+}

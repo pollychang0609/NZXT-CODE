@@ -9,19 +9,19 @@ Write a web app using the Python flask framework, which contains a static web pa
 
 ### Front-end static page:
 
-* [] A static web page for users to enter a user name, password, and a button to log in.
+* [X] A static web page for users to enter a user name, password, and a button to log in.
 
-* [] Sends an HTTP web request when the login button is pressed.
+* [X] Sends an HTTP web request when the login button is pressed.
 
-* [] Display login success or failure message after getting a response from the back-end.
+* [X] Display login success or failure message after getting a response from the back-end.
 
-* [] Write it in HTML.
+* [X] Write it in HTML.
 
 ### Back-end service:
 
-* [] Gets requests from the front-end and verify if the credentials match or not.
+* [X] Gets requests from the front-end and verify if the credentials match or not.
 
-* [] Response the match or not result to front-end.
+* [X] Response the match or not result to front-end.
 
 * [X] ~~Write it with python and the flask framework.~~ Replace by jest.
 
@@ -39,9 +39,9 @@ Write a web app using the Python flask framework, which contains a static web pa
 
 ### UI test:
 
-* [] End to end tests to see if the whole feature works.
+* [X] End to end tests to see if the whole feature works.
 
-* [] End to end tests to see if the whole feature works.
+* [X] End to end tests to see if the whole feature works.
 Write it using webdriverIO with cucumberjs framework, the language used to write test steps and page objects should be Typescript (or Javascript).
 
 

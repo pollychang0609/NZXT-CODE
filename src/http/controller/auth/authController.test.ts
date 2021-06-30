@@ -80,5 +80,4 @@ describe("# Controller", function () {
     },
     15 * 1000
   ); //done
-
 });

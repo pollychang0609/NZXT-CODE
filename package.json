@@ -33,7 +33,7 @@
     "git-log": "git log --oneline",
     "-------------------- formatter --------------------": "",
     "lint": "eslint . --ext .js,.ts --ignore-path .eslintignore",
-    "lint-fix": "eslint . --fix",
+    "lint-fix": "eslint --fix $1",
     "prettier-fix": "npx prettier --write src/**/*.ts ",
     "prepare": "husky install"
   },

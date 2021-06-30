@@ -170,7 +170,7 @@ export interface User {
   /**
    * 確認密碼
    */
-  confirmPassword: string;
+  confirmPassword?: string;
 
   /**
    * 個人照片

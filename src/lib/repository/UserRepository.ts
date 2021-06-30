@@ -7,6 +7,10 @@ export class UserRepository {
   private readonly _userModel: Model<IUser>;
   private readonly _conn: Connection;
 
+  /**
+   *
+   * @param { import("mongoose").Connection } conn
+   */
   constructor(conn: Connection) {
     this._conn = conn;
     this._userModel = mongoose.model<IUser>(
@@ -45,6 +49,7 @@ export class UserRepository {
 
   /**
    * 更新使用者(資料庫查詢)
+   * @param filter
    * @param value
    * @returns
    */

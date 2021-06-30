@@ -5,13 +5,19 @@ import { Strategy as localStrategy } from "passport-local";
 import cfg from "../cfg";
 import { User } from "../http/model/auth/user";
 import { enc } from "../lib/util/aes";
-import { UserService } from "./userService";
+// import { UserService } from "./userService";
 import { IUser } from "../lib/repository/UserSchema";
+import ServiceProvider from "./serviceProvider";
+import { SERVICE_TYPE } from "./iService";
+import { UserService } from "./userService";
 // import MongoStore from "connect-mongo";
 
 initPassport();
 
 export class AuthService {
+  private userService = ServiceProvider.getService(
+    SERVICE_TYPE.USER
+  ) as UserService;
   public static getCurrentUserName(request: any): string {
     let userName;
     if (request) {

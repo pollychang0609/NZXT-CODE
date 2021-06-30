@@ -7,7 +7,7 @@ import { initAuth, initSession } from "../service/authService";
 import cfg from "../cfg";
 
 const swaggerUi = require("swagger-ui-express");
-const cors = require('cors');
+const cors = require("cors");
 const app = express();
 
 app.use(express.json());

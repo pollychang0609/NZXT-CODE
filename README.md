@@ -29,7 +29,7 @@ Write a web app using the Python flask framework, which contains a static web pa
 
 * [X] Test the function that verifies if the credentials match with different test cases.
 
-* [X] ~~Write it using python unittest or pytest.~~ Replace by jest.
+* [X] ~~Write it using python unittest or pytest.~~ Replace by jest and supertest.
 
 ### API test:
 

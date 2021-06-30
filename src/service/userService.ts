@@ -1,16 +1,20 @@
 import { UserRepository } from "../lib/repository/UserRepository";
 import mongoose from "mongoose";
+import { IService, Service } from "./iService";
 
-export class UserService {
+export class UserService extends Service implements IService {
   private static instance: UserService;
   private static userRepository: UserRepository;
   /* eslint-disable @typescript-eslint/no-empty-function */
-  private constructor() {}
+  private constructor() {
+    super();
+  }
   /**
    * The static method that controls the access to the singleton instance
    *
    * This implementation let you subclass the Singleton class while keeping
    * just one instance of each subclass around
+   * @return {UserService}
    */
   public static getInstance(): UserService {
     if (!UserService.instance) {
@@ -26,7 +30,7 @@ export class UserService {
 
   /**
    * 查詢使用者 via account
-   * @param account
+   * @param {string} account
    * @returns
    */
   public async getUserByAccount(account: string) {
@@ -35,7 +39,7 @@ export class UserService {
 
   /**
    * 查詢使用者 via _id
-   * @param _id
+   * @param {string} _id
    * @returns
    */
   public async getUserById(_id: string) {
@@ -44,7 +48,7 @@ export class UserService {
 
   /**
    * 查詢使用者 via name
-   * @param name
+   * @param {string} name
    * @returns
    */
   public async getUserByName(name: string) {
